@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PYTHONES+</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- SECCIÓN HERO -->
+    <header class="hero">
+        <h1>Aprende Programación con <span>PYTHONES+</span></h1>
+        <p>Retos interactivos, niveles progresivos y un chatbot con IA que te guía paso a paso.</p>
+        <button class="btn">Comenzar ahora</button>
+    </header>
+
+    <!-- ¿Qué es PYTHONES+? -->
+    <section class="info">
+        <h2>¿Qué es PYTHONES+?</h2>
+        <p>PYTHONES+ es una plataforma educativa web y móvil con ejercicios de lógica, retos interactivos y un chatbot inteligente para aprender programación.</p>
+    </section>
+
+    <!-- Niveles progresivos -->
+    <section class="niveles">
+        <h2>Sistema de niveles progresivos</h2>
+        <ul>
+            <li>Nivel 1 – Fundamentos</li>
+            <li>Nivel 2 – Lógica</li>
+            <li>Nivel 3 – Algoritmos</li>
+            <li>Nivel 4 – Retos</li>
+            <li>Nivel 5 – Proyectos</li>
+        </ul>
+    </section>
+
+    <!-- EJERCICIOS INTERACTIVOS -->
+    <section class="exercise-section">
+        <h2>Ejercicio Interactivo</h2>
+        <p id="exerciseText"></p>
+
+        <textarea id="codeArea" class="code-area">
+    // Escribe tu código aquí
+    resultado = 2 + 2
+        </textarea>
+
+        <button class="btn" id="runCode">Ejecutar</button>
+
+        <div class="output-box">
+            <strong>Salida:</strong>
+            <pre id="output"></pre>
+        </div>
+
+        <button class="btn" id="newExercise">Nuevo ejercicio</button>
+    </section>
+
+    <!-- QUIZ INTERACTIVO -->
+    <section class="quiz-section">
+        <h2>Quiz de Programación</h2>
+
+        <p id="quizQuestion"></p>
+
+        <div id="quizOptions" class="quiz-options"></div>
+
+        <div id="quizResult" class="quiz-result"></div>
+
+        <button id="nextQuiz" class="btn" style="display:none;">Siguiente</button>
+    </section>
+
+    <!-- Chatbot IA -->
+    <section class="chatbot">
+        <h2>Chatbot con IA</h2>
+        <p>Tu asistente personalizado que te explica, resuelve dudas y te guía en cada ejercicio.</p>
+        <button class="btn">Probar Chatbot</button>
+    </section>
+    <!-- CHATBOT -->
+    <!-- CHATBOT MODERNO -->
+    <div class="chatbot-container">
+        <div class="chatbot-header">Chatbot PYTHONES+</div>
+
+        <div id="chatMessages" class="chatbot-messages"></div>
+
+        <div class="chatbot-input-area">
+            <input type="text" id="userInput" placeholder="Escribe un mensaje...">
+            <button id="sendBtn" onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+    <section style="padding: 20px; font-family: Arial; max-width: 800px; margin: auto;">
+        <h2 style="text-align: center;">Planes Disponibles</h2>
+
+        <div style="display: flex; gap: 20px; margin-top: 30px; flex-wrap: wrap; justify-content: center;">
+
+            <!-- Plan Básico -->
+            <div style="border: 1px solid #ccc; border-radius: 10px; padding: 20px; width: 240px; text-align: center;">
+                <h3>⭐ Nivel Básico</h3>
+                <p style="font-size: 24px; font-weight: bold; color: green;">S/ 0</p>
+                <p>Acceso gratuito ideal para empezar sin barreras.</p>
+                <button style="padding: 10px 20px; border: none; background: green; color: white; border-radius: 8px;">Comenzar</button>
+            </div>
+
+            <!-- Plan Premium -->
+            <div style="border: 1px solid #ccc; border-radius: 10px; padding: 20px; width: 240px; text-align: center;">
+                <h3>🔥 Nivel Premium</h3>
+                <p style="font-size: 24px; font-weight: bold; color: #0077cc;">S/ 50 / mes</p>
+                <p>Funciones avanzadas y experiencia completa.</p>
+                <button style="padding: 10px 20px; border: none; background: #0077cc; color: white; border-radius: 8px;">Adquirir</button>
+            </div>
+
+            <!-- Plan Premium Universitario -->
+            <div style="border: 1px solid #ccc; border-radius: 10px; padding: 20px; width: 240px; text-align: center;">
+                <h3>🎓 Premium Universitario</h3>
+                <p style="font-size: 24px; font-weight: bold; color: #aa00aa;">S/ 35 / mes</p>
+                <p>Precio especial para estudiantes con beneficios completos.</p>
+                <button style="padding: 10px 20px; border: none; background: #aa00aa; color: white; border-radius: 8px;">Obtener</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
